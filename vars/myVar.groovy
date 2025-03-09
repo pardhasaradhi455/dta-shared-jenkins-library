@@ -1,3 +1,3 @@
-def version() {
-    return "version1"
+def call() {
+    return "Hello from the shared library!"
 }
