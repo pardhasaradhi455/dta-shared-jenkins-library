@@ -1,7 +1,7 @@
 def call(Map pipelineParams, Map optionsMap) {
     
     def language = ""
-    def settings = new com.daimler.diacon.vdc.Settings()
+    def settings = new Settings()
     switch(pipelineParams["PROG_LANGUAGE"]){
         case "GO":
             echo "Programming language is GO"
