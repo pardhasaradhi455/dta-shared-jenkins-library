@@ -14,7 +14,7 @@ def call(Map pipelineParams, Map optionsMap) {
 
     settings.checkMap("optionsMap",optionsMap,["COMPANY","PROJECTGROUP","REGION"],true)
 
-    if (language = "GO") {  
+    if (language == "GO") {  
         pipeline{
             agent {
                 node {
