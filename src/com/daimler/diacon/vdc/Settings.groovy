@@ -1,3 +1,5 @@
+package com.daimler.diacon.vdc
+
 def boolean checkMap(String mapName, Map checkMap, List<String> mandatoryElements, boolean mandatory){
     mandatoryElements.each{
         element=checkMap.get(it)
