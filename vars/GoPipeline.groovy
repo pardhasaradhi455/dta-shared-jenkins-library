@@ -16,11 +16,12 @@ def call(Map pipelineParams, Map optionsMap) {
 
     if (language == "GO") {  
         pipeline{
-            agent {
-                node {
-                    label pipelineParams["PROG_LANGUAGE"]
-                }
-            }
+            agent any
+            // agent {
+            //     node {
+            //         label pipelineParams["PROCESS_AT"]
+            //     }
+            // }
             stages {
                 stage("Import libraries"){
                     steps{
